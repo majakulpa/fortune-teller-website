@@ -1,249 +1,260 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Amazing Quiz</title>
-
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="150">
+    <div class="main-container-quiz">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="fortune-teller-portal.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="mainContainerQuiz">
-            <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
-                    <a class="navbar-brand" href="fortune-teller-portal.html">Home</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item ">
-                        <a class="nav-link" href="fortune-teller.html">Fortune Teller</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="cards.html">Magic Cards</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="quiz.html">Love Quiz</a>
-                            </li>  
-                    </ul>
-                
-                    </div>
-            </nav>
-
-        
-                <div class="mainQuiz">
-                        <div id="results"></div>
-                        <div class="quiz-container">       
-                            <div id="quiz"></div>
-                        </div>
-                        
-                        <button id="previous">Previous Question</button>
-                        <button id="next">Next Question</button>
-                        <button id="submit">Submit Quiz</button>   
-                </div> 
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="fortune-teller.html">Fortune Teller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cards.html">Magic Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Amazing Quiz</a>
+            </li>
+          </ul>
         </div>
-        
-       
-            
-            <footer>&copy; Maja Kulpa 2019</footer>
-        
+      </nav>
+
+      <div class="main-quiz">
+        <div id="results"></div>
+        <div class="quiz-container">
+          <div id="quiz"></div>
+        </div>
+
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed & created by Maja Kulpa. Copyright © by Maja Kulpa. 2019</p>
+    </footer>
+
     <script type="text/javascript">
-
-      
-(function(){
-
-const myQuestions = [
-            {
-                question: "What is your favourite food?",
-                answers: {
-                a: "Chocolate",
-                b: "Pasta",
-                c: "Sushi, obviously"
-                },
-                correctAnswer1: "a",
-                correctAnswer2: "b",
-                correctAnswer3: "c"
+      (function() {
+        const myQuestions = [
+          {
+            question: "What is your favourite food?",
+            answers: {
+              a: "Chocolate",
+              b: "Pasta",
+              c: "Sushi, obviously"
             },
-            {
-                question: "What is your hobby?",
-                answers: {
-                a: "Watching TV shows",
-                b: "Romantic dinners, dating",
-                c: "Yoga"
-                },
-                correctAnswer1: "a",
-                correctAnswer2: "b",
-                correctAnswer3: "c"
+            correctAnswer1: "a",
+            correctAnswer2: "b",
+            correctAnswer3: "c"
+          },
+          {
+            question: "What is your hobby?",
+            answers: {
+              a: "Watching TV shows",
+              b: "Romantic dinners, dating",
+              c: "Yoga"
             },
-            {
-                question: "What's your favourite drink?",
-                answers: {
-                a: "Beer",
-                b: "Wine",
-                c: "Green tea",
-                },
-                correctAnswer1: "a",
-                correctAnswer2: "b",
-                correctAnswer3: "c"
+            correctAnswer1: "a",
+            correctAnswer2: "b",
+            correctAnswer3: "c"
+          },
+          {
+            question: "What's your favourite drink?",
+            answers: {
+              a: "Beer",
+              b: "Wine",
+              c: "Green tea"
             },
-            {
-                question: "How you would describe yourself?",
-                answers: {
-                a: "Just normal person",
-                b: "Funny and friendy",
-                c: "Modern and knowledgeable",
-                },
-                correctAnswer1: "a",
-                correctAnswer2: "b",
-                correctAnswer3: "c"
+            correctAnswer1: "a",
+            correctAnswer2: "b",
+            correctAnswer3: "c"
+          },
+          {
+            question: "How you would describe yourself?",
+            answers: {
+              a: "Just normal person",
+              b: "Funny and friendy",
+              c: "Modern and knowledgeable"
             },
-            {
-                question: "Who is your best friend?",
-                answers: {
-                a: "TV",
-                b: "My partner",
-                c: "Everyone",
-                },
-                correctAnswer1: "a",
-                correctAnswer2: "b",
-                correctAnswer3: "c"
+            correctAnswer1: "a",
+            correctAnswer2: "b",
+            correctAnswer3: "c"
+          },
+          {
+            question: "Who is your best friend?",
+            answers: {
+              a: "TV",
+              b: "My partner",
+              c: "Everyone"
             },
-            ];
+            correctAnswer1: "a",
+            correctAnswer2: "b",
+            correctAnswer3: "c"
+          }
+        ];
 
-function buildQuiz(){
-    // we'll need a place to store the HTML output
-    const output = [];
+        function buildQuiz() {
+          // we'll need a place to store the HTML output
+          const output = [];
 
-    // for each question...
-    myQuestions.forEach(
-        (currentQuestion, questionNumber) => {
-
+          // for each question...
+          myQuestions.forEach((currentQuestion, questionNumber) => {
             // we'll want to store the list of answer choices
             const answers = [];
 
             // and for each available answer...
-            for(letter in currentQuestion.answers){
-
-            // ...add an HTML radio button
-            answers.push(
+            for (letter in currentQuestion.answers) {
+              // ...add an HTML radio button
+              answers.push(
                 `<label>
                     <input type="radio" name="question${questionNumber}" value="${letter}">
                     ${letter} :
                     ${currentQuestion.answers[letter]}
             </label>`
-                );
+              );
             }
 
             // add this question and its answers to the output
             output.push(
-                `<div class="slide">
+              `<div class="slide">
                     <div class="question"> ${currentQuestion.question} </div>
                     <div class="answers"> ${answers.join("")} </div>
                 </div>`
-                    );
+            );
+          });
+
+          // finally combine our output list into one string of HTML and put it on the page
+          quizContainer.innerHTML = output.join("");
+        }
+
+        function showResults() {
+          // gather answer containers from our quiz
+          const answerContainers = quizContainer.querySelectorAll(".answers");
+
+          // keep track of user's answers
+          let numCorrect1 = 0;
+          let numCorrect2 = 0;
+          let numCorrect3 = 0;
+
+          // for each question...
+          myQuestions.forEach((currentQuestion, questionNumber) => {
+            // find selected answer
+            const answerContainer = answerContainers[questionNumber];
+            const selector =
+              "input[name=question" + questionNumber + "]:checked";
+            const userAnswer = (answerContainer.querySelector(selector) || {})
+              .value;
+
+            // if answer is correct
+            if (userAnswer === currentQuestion.correctAnswer1) {
+              // add to the number of correct answers
+              numCorrect1++;
+            } else if (userAnswer === currentQuestion.correctAnswer2) {
+              // add to the number of correct answers
+              numCorrect2++;
+            } else if (userAnswer === currentQuestion.correctAnswer3) {
+              // add to the number of correct answers
+              numCorrect3++;
             }
-        );
+            // if answer is wrong or blank
+            else {
+              // color the answers red
+              answerContainers[questionNumber].style.color = "red";
+            }
+          });
 
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
-    }
-
-    function showResults(){
-
-        // gather answer containers from our quiz
-        const answerContainers = quizContainer.querySelectorAll('.answers');
-
-        // keep track of user's answers
-        let numCorrect1 = 0;
-        let numCorrect2 = 0;
-        let numCorrect3 = 0;
-
-        // for each question...
-        myQuestions.forEach( (currentQuestion, questionNumber) => {
-
-        // find selected answer
-        const answerContainer = answerContainers[questionNumber];
-        const selector = 'input[name=question'+questionNumber+']:checked';
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-        // if answer is correct
-        if(userAnswer===currentQuestion.correctAnswer1){
-            // add to the number of correct answers
-            numCorrect1++;
-        } else if (userAnswer===currentQuestion.correctAnswer2) {
-            // add to the number of correct answers
-            numCorrect2++;
-        } else if (userAnswer===currentQuestion.correctAnswer3) {
-            // add to the number of correct answers
-            numCorrect3++;
-        }
-        // if answer is wrong or blank
-        else{
-            // color the answers red
-            answerContainers[questionNumber].style.color = 'red';
-        }
-        });
-
-        if (numCorrect1 > numCorrect2 && numCorrect1 > numCorrect3) {
+          if (numCorrect1 > numCorrect2 && numCorrect1 > numCorrect3) {
             resultsContainer.innerHTML = "You will find your happiness soon!";
-        } else if (numCorrect2 > numCorrect1 && numCorrect2 > numCorrect3) {
-            resultsContainer.innerHTML = "The love of your life is just around the corner, go and have a look!";
-        } else if (numCorrect3 > numCorrect1 && numCorrect3 > numCorrect2) {
-            resultsContainer.innerHTML = "Someone handsome is waiting for you, make a first step!";
-        } else if (numCorrect3 == numCorrect1 && numCorrect3 > numCorrect2) {
+          } else if (numCorrect2 > numCorrect1 && numCorrect2 > numCorrect3) {
+            resultsContainer.innerHTML =
+              "The love of your life is just around the corner, go and have a look!";
+          } else if (numCorrect3 > numCorrect1 && numCorrect3 > numCorrect2) {
+            resultsContainer.innerHTML =
+              "Someone handsome is waiting for you, make a first step!";
+          } else if (numCorrect3 == numCorrect1 && numCorrect3 > numCorrect2) {
             resultsContainer.innerHTML = "In next year you will buy a pet!";
-        } else if (numCorrect2 == numCorrect1 && numCorrect2 > numCorrect3) {
-            resultsContainer.innerHTML = "Soon you will meet someone who will change you forever!";
-        } else {
-            resultsContainer.innerHTML = "Wrong input, try again!";
-        }
+          } else if (numCorrect2 == numCorrect1 && numCorrect2 > numCorrect3) {
+            resultsContainer.innerHTML =
+              "Soon you will meet someone who will change you forever!";
+          } else {
+            resultsContainer.innerHTML =
+              "Next year you will win a lot of money";
+          }
 
-        // show number of correct answers out of total
-        
+          // show number of correct answers out of total
         }
 
         function showSlide(n) {
-            slides[currentSlide].classList.remove('active-slide');
-            slides[n].classList.add('active-slide');
-            currentSlide = n;
-            if(currentSlide===0){
-                previousButton.style.display = 'none';
-            }
-            else{
-                previousButton.style.display = 'inline-block';
-            }
-            if(currentSlide===slides.length-1){
-                nextButton.style.display = 'none';
-                submitButton.style.display = 'inline-block';
-            }
-            else{
-                nextButton.style.display = 'inline-block';
-                submitButton.style.display = 'none';
-            }
+          slides[currentSlide].classList.remove("active-slide");
+          slides[n].classList.add("active-slide");
+          currentSlide = n;
+          if (currentSlide === 0) {
+            previousButton.style.display = "none";
+          } else {
+            previousButton.style.display = "inline-block";
+          }
+          if (currentSlide === slides.length - 1) {
+            nextButton.style.display = "none";
+            submitButton.style.display = "inline-block";
+          } else {
+            nextButton.style.display = "inline-block";
+            submitButton.style.display = "none";
+          }
         }
 
         function showNextSlide() {
-            showSlide(currentSlide + 1);
-            }
+          showSlide(currentSlide + 1);
+        }
 
         function showPreviousSlide() {
-            showSlide(currentSlide - 1);
-            }
+          showSlide(currentSlide - 1);
+        }
 
-        const quizContainer = document.getElementById('quiz');
-        const resultsContainer = document.getElementById('results');
-        const submitButton = document.getElementById('submit');
+        const quizContainer = document.getElementById("quiz");
+        const resultsContainer = document.getElementById("results");
+        const submitButton = document.getElementById("submit");
 
-            // display quiz right away
+        // display quiz right away
         buildQuiz();
 
         // pagination
@@ -255,15 +266,10 @@ function buildQuiz(){
         showSlide(0);
 
         // on submit, show results
-        submitButton.addEventListener('click', showResults);
+        submitButton.addEventListener("click", showResults);
         previousButton.addEventListener("click", showPreviousSlide);
         nextButton.addEventListener("click", showNextSlide);
-         
-
-})();   
-
+      })();
     </script>
-
-</body>
-
+  </body>
 </html>

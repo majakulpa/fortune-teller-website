@@ -1,99 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Fortune Teller Portal</title>
-
-
   </head>
-  <body id="bodyFortune" data-spy="scroll" data-target="#navbar" data-offset="150">
-    
+  <body
+    id="body-fortune"
+    data-spy="scroll"
+    data-target="#navbar"
+    data-offset="150"
+  >
+    <nav class="navbar navbar-expand-lg  navbar-fixed-top" id="navbar">
+      <a class="navbar-brand" href="fortune-teller-portal.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <nav class="navbar navbar-expand-lg  navbar-fixed-top" id="navbar">
-                <a class="navbar-brand" href="fortune-teller-portal.html">Home</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item ">
-                        <a class="nav-link" href="fortune-teller.html">Fortune Teller</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="cards.html">Magic Cards</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="quiz.html">Love Quiz</a>
-                        </li>  
-                  </ul>
-                
-                </div>
-        </nav>
-        
-    
-        <div class="jumbotron" id="jumbo">
-            <h1 class="display-4" id="first-header">Fortune Telleres</h1>
-            <p class="lead" id="p1">Find Out Who You Are And What Your Future Looks Like</p>
-   
-         </div>
-    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="fortune-teller.html">Fortune Teller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cards.html">Magic Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Amazing Quiz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <div class="row justify-content-md-center" id="about">
+    <div class="jumbotron" id="jumbo">
+      <h1 class="display-4" id="first-header">Fortune Telleres</h1>
+      <p class="lead" id="p1">
+        Find Out Who You Are And What Your Future Looks Like
+      </p>
+    </div>
 
-                <div class="col-sm-3">
-                    <a href="fortune-teller.html">
-                    <div class="card" >
-                            <img src="girl.jpeg" class="card-img-top" alt="city">
-                            <div class="card-body">
-                              <h5 class="card-title">Meet Cassandra - Our Fortune Teller</h5>
-                              <p class="card-text">Ask her any question about your life and future and she wil give you an answer.</p>
-                            </div>
-                     </div>
-                    </a>  
-                 </div>
-                    
-                        <div class="col-sm-3">
-                        <a href="cards.html">
-                          <div class="card">
-                                <img src="magic.jpeg" class="card-img-top" alt="view">
-                                <div class="card-body">
-                                  <h5 class="card-title">Magic Cards</h5>
-                                  <p class="card-text">Just flip the card and your future will be revealed. Try this now! </p>
-                                  
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                        
-                           
-                        <div class="col-sm-3">
-                            <a href="quiz.html">
-                            <div class="card">
-                                    <img src="pum.jpeg" class="card-img-top" alt="magic">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Amazing Quiz</h5>
-                                      <p class="card-text">Take this amazing quiz, to find out your destiny! But don't take it to serious.</p>
-                                      
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                           
-                            
-                    </div>
-                
+    <div class="row justify-content-md-center" id="about">
+      <div class="col-sm-3">
+        <a href="fortune-teller.html">
+          <div class="card">
+            <img src="girl.jpeg" class="card-img-top" alt="city" />
+            <div class="card-body">
+              <h5 class="card-title">Meet Cassandra - Our Fortune Teller</h5>
+              <p class="card-text">
+                Ask her any question about your life and future and she wil give
+                you an answer.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-            <footer>&copy; Maja Kulpa 2019</footer>
+      <div class="col-sm-3">
+        <a href="cards.html">
+          <div class="card">
+            <img src="magic.jpeg" class="card-img-top" alt="view" />
+            <div class="card-body">
+              <h5 class="card-title">Magic Cards</h5>
+              <p class="card-text">
+                Just flip the card and your future will be revealed. Try this
+                now!
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
 
-</body>
+      <div class="col-sm-3">
+        <a href="quiz.html">
+          <div class="card">
+            <img src="pum.jpeg" class="card-img-top" alt="magic" />
+            <div class="card-body">
+              <h5 class="card-title">Amazing Quiz</h5>
+              <p class="card-text">
+                Take this amazing quiz, to find out your destiny! But don't take
+                it to serious.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed & created by Maja Kulpa. Copyright © by Maja Kulpa. 2019</p>
+    </footer>
+  </body>
 </html>

@@ -1,176 +1,194 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Magic Cards</title>
 
-    <style>
-   
-   
-
-
-    </style>
-
+    <style></style>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="150">
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
+        <a class="navbar-brand" href="fortune-teller-portal.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="main">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="fortune-teller.html">Fortune Teller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cards.html">Magic Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Amazing Quiz</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-            <nav class="navbar navbar-expand-lg navbar-fixed-top" id="navbar">
-                    <a class="navbar-brand" href="fortune-teller-portal.html">Home</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item ">
-                        <a class="nav-link" href="fortune-teller.html">Fortune Teller</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="cards.html">Magic Cards</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="quiz.html">Love Quiz</a>
-                            </li>  
-                    </ul>
-                
-                    </div>
-            </nav>
-        
-        
+      <h1>Flip The Card To Reveal Your Future</h1>
 
-        <h1>Flip The Card To Reveal Your Future</h1>
-    
-              <div class="flip-card" id="card1">
-                <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="card.png" class="card-img-top" alt="magic">
-                        </div>
-                        <div class="flip-card-back">
-                                <p class="msg" id="msg1"></p>
-                        </div>
-                </div>
+      <div class="flip-card" id="card1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mag.jpeg" class="card-img-top" alt="magic" />
+          </div>
+          <div class="flip-card-back">
+            <div class="flip-card-back-msg">
+              <p class="msg" id="msg1"></p>
             </div>
-            <div class="flip-card" id="card2">
-                <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="card.png" class="card-img-top" alt="magic">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="msg" id="msg2"></p>
-                        </div>
-                </div>
-             </div>
-             <div class="flip-card" id="card3">
-                <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="card.png" class="card-img-top" alt="magic">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="msg" id="msg3"></p>
-                        </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="card2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mag.jpeg" class="card-img-top" alt="magic" />
+          </div>
+          <div class="flip-card-back">
+            <div class="flip-card-back-msg">
+              <p class="msg" id="msg2"></p>
             </div>
-            <div class="flip-card" id="card4">
-                <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="card.png" class="card-img-top" alt="magic">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="msg" id="msg4"></p>
-                        </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="card3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mag.jpeg" class="card-img-top" alt="magic" />
+          </div>
+          <div class="flip-card-back">
+            <div class="flip-card-back-msg">
+              <p class="msg" id="msg3"></p>
             </div>
-            <div class="flip-card" id="card5">
-                <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="card.png" class="card-img-top" alt="magic">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="msg" id="msg5"></p>
-                        </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="card4">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mag.jpeg" class="card-img-top" alt="magic" />
+          </div>
+          <div class="flip-card-back">
+            <div class="flip-card-back-msg">
+              <p class="msg" id="msg4"></p>
             </div>
-            <div class="flip-card" id="card6">
-                <div class="flip-card-inner" >
-                        <div class="flip-card-front" >
-                            <img src="card.png" class="card-img-top" alt="magic">
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="msg" id="msg6"></p>
-                        </div>
-                </div>
-             </div>
-             
-    </div>  
-            
-            <footer>&copy; Maja Kulpa 2019</footer>
-        
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="card5">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mag.jpeg" class="card-img-top" alt="magic" />
+          </div>
+          <div class="flip-card-back">
+            <div class="flip-card-back-msg">
+              <p class="msg" id="msg5"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="card6">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="mag.jpeg" class="card-img-top" alt="magic" />
+          </div>
+          <div class="flip-card-back">
+            <div class="flip-card-back-msg">
+              <p class="msg" id="msg6"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Designed & created by Maja Kulpa. Copyright © by Maja Kulpa. 2019</p>
+    </footer>
+
     <script type="text/javascript">
+      function getRandomSentence() {
+        let sentence = [
+          "You will win a lot of money",
+          "Your road to glory will be rocky, but fulfilling",
+          "Someone is looking up to you. Don't let this person down.",
+          "The fortune you seek is on another card.",
+          "You will die alone and poorly dressed.",
+          "If you look back, you'll soon be going that way.",
+          "You will live long enough.",
+          "The greatest danger could be your stupidity.",
+          "The world may be your oyster, but it doesn't mean you'll get its pearl.",
+          "Don't behave with cold manners and people will like you much more.",
+          "It is a good day to have a good day.",
+          "Someone will invite you to a Karaoke party, you should go.",
+          "Hard work pays off in the future. Laziness pays off now.",
+          "Don't be affraid of change. ",
+          "Today it's up to you to create the peacefulness you long for.",
+          "If you have something good in your life, don't let it go!",
+          "You cannot love life until you live the life you love.",
+          "You already know the answer to the questions lingering inside your head.",
+          "Go for it now. The future is promised to no one.",
+          "Quit your job and travel the world",
+          "Don't listen to fools",
+          "The future belongs to those who believe in the beauty of their dreams.",
+          "If you want to be happy, do not dwell in the past.",
+          "Knowing too much of your future is never a good thing.",
+          "The future depends on what you do today",
+          "No matter how dirty your past is, your future is still spotless.",
+          "The only thing we know about the future is that it will be different.",
+          "You cannot change your future. But you can change your habits."
+        ];
 
+        let randomSentence =
+          sentence[Math.floor(Math.random() * sentence.length)];
+        return randomSentence;
+      }
 
-        function getRandomSentence() {
-            let sentence = ["Be on the alert to recognize your prime at whatever time of your life it may occur", 
-                        "Your road to glory will be rocky, but fulfilling",
-                        "Someone is looking up to you. Don't let this person down.",
-                        "The fortune you seek is on another card.",
-                        "You will die alone and poorly dressed.",
-                        "If you look back, you'll soon be going that way.",
-                        "You will live long enough.",
-                        "The greatest danger could be your stupidity.",
-                        "The world may be your oyster, but it doesn't mean you'll get its pearl.",
-                        "Don't behave with cold manners and people will like you much more.",
-                        "It is a good day to have a good day.",
-                        "Someone will invite you to a Karaoke party, you should go.",
-                        "Hard work pays off in the future. Laziness pays off now.",
-                        "Don't be affraid of change. Change is inevitable, except for vending machines.",
-                        "Today it's up to you to create the peacefulness you long for.",
-                        "If you have something good in your life, don't let it go!",
-                        "You cannot love life until you live the life you love.",
-                        "You already know the answer to the questions lingering inside your head.",
-                        "Go for it now. The future is promised to no one.",
-                        "Quit your job and travel the world",
-                        "Don't listen to fools",
-                        "The future belongs to those who believe in the beauty of their dreams.",
-                        "If you want to be happy, do not dwell in the past, do not worry about the future, focus on living fully in the present.",
-                        "Knowing too much of your future is never a good thing.",
-                        "The future depends on what you do today",
-                        "No matter how dirty your past is, your future is still spotless.",
-                        "The only thing we know about the future is that it will be different.",
-                        "You cannot change your future. But you can change your habits. And surely your habits will change your future."];
+      function getSentenceOnFlip(id1, id2) {
+        document.getElementById(id1).onmouseover = function() {
+          document.getElementById(id2).innerHTML = getRandomSentence();
+        };
+      }
 
-                let randomSentence = sentence[Math.floor(Math.random() * sentence.length)];
-                return randomSentence;
-        }
-       
-		
-        function getSentenceOnFlip(id1, id2) {
-				document.getElementById(id1).onmouseover = function() {
-					document.getElementById(id2).innerHTML =  getRandomSentence();     	    
-				  }
-			}
-
-        getSentenceOnFlip("card1", "msg1");
-        getSentenceOnFlip("card2", "msg2");
-        getSentenceOnFlip("card3", "msg3");
-        getSentenceOnFlip("card4", "msg4");
-        getSentenceOnFlip("card5", "msg5");
-        getSentenceOnFlip("card6", "msg6");
-
-           
-
+      getSentenceOnFlip("card1", "msg1");
+      getSentenceOnFlip("card2", "msg2");
+      getSentenceOnFlip("card3", "msg3");
+      getSentenceOnFlip("card4", "msg4");
+      getSentenceOnFlip("card5", "msg5");
+      getSentenceOnFlip("card6", "msg6");
     </script>
-
-</body>
-
+  </body>
 </html>
