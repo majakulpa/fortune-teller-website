@@ -253,10 +253,16 @@ h1 {
   font-size: 400%;
 }
 
+.main-div {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .flip-card {
   border-radius: 6px;
   width: 220px;
-  float: left;
   -o-background-color: transparent;
   -moz-background-color: transparent;
   -webkit-background-color: transparent;
@@ -265,7 +271,7 @@ h1 {
   -moz-perspective: 1000px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  margin: 100px 40px;
+  margin: 50px;
   -o-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -345,11 +351,15 @@ h1 {
 }
 
 @media only screen and (max-width: 1680px) {
+  .flip-card {
+    margin: 10px;
+  }
+  .flip-card-back-msg {
+    width: 220px;
+    height: 300px;
+  }
   h1 {
     padding-top: 10%;
-  }
-  .flip-card {
-    margin: 50px 10px 300px 100px;
   }
 
   .main {
@@ -364,9 +374,6 @@ h1 {
   h1 {
     padding-top: 10%;
   }
-  .flip-card {
-    margin: 50px 10px 300px 100px;
-  }
 
   .main {
     height: 120vh;
@@ -377,21 +384,22 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1000px) {
+  .flip-card-back-msg {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   h1 {
-    font-size: 25px;
-    padding-top: 80px;
+    font-size: 40px;
+    padding-top: 150px;
     padding-bottom: 40px;
   }
-  .flip-card {
-    width: 120px;
-    margin: 20px 10px 200px 35px;
-  }
-
   .flip-card-back-msg {
-    width: 120px;
-    height: 170px;
-    font-size: 14px;
+    width: 180px;
+    height: 260px;
   }
 
   .main {
@@ -399,16 +407,44 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 840px) {
+  #card4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .flip-card-back-msg {
+    width: 150px;
+    height: 210px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
   .flip-card {
-    width: 100px;
-    margin: 20px 10px 200px 35px;
+    margin: 5px;
+  }
+  .flip-card-back-msg {
+    width: 120px;
+    height: 170px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #card3 {
+    display: none;
   }
 
   .flip-card-back-msg {
     width: 120px;
-    height: 170px;
-    font-size: 14px;
+    height: 190px;
+    font-size: 15px;
   }
 
   .main {
