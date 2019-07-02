@@ -71,23 +71,21 @@
 
       <p id="msg-cass"></p>
       <div class="container" id="row-cass">
-        <form class="row justify-content-md-center" id="form-cass">
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Your question"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-              id="question"
-            />
-            <div class="input-group-append">
-              <button class="btn btn-light" type="button" id="button-addon2">
-                Ask
-              </button>
-            </div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your question"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            id="question"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-light" type="button" id="button-addon2">
+              Ask
+            </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
     <footer>
@@ -95,7 +93,13 @@
     </footer>
 
     <script type="text/javascript">
-      document.getElementById("button-addon2").onclick = function() {
+      // document.getElementById("button-addon2").onclick = function() {
+      //   let choice1 = document.getElementById("question").value;
+
+      let button = document.getElementById("button-addon2");
+      let input = document.getElementById("question");
+
+      function askQuestion() {
         let choice1 = document.getElementById("question").value;
 
         if (
@@ -181,7 +185,22 @@
           answer = "Seems like nothing's getting safer or better";
         }
         document.getElementById("msg-cass").innerHTML = answer;
-      };
+      }
+
+      function onBtnClick() {
+        askQuestion();
+      }
+
+      function onInputKeyPress(event) {
+        if (event.keyCode === 13) {
+          //debugger;
+          askQuestion();
+
+          console.log("clicked");
+        }
+      }
+      button.addEventListener("click", onBtnClick);
+      input.addEventListener("keypress", onInputKeyPress);
     </script>
   </body>
 </html>
